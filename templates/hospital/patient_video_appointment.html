@@ -1,0 +1,65 @@
+{% extends 'hospital/patient_base.html' %}
+{% block content %}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<style>
+    .video-call-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  
+    .video-call-box {
+      width: 500px;
+      background-color: #f1f1f1;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  
+    .video-call-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .video-call-content {
+      height: 300px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .video-call-footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .end-call-btn {
+      padding: 10px 20px;
+      background-color: #b73333;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+  <div class="video-call-container">
+  <div class="video-call-box">
+    <div class="video-call-header">
+      <h2>Doctor-Patient Video Call</h2>
+    </div>
+    <div class="video-call-content">
+      <!-- Video call content area, you can embed your video call component here -->
+    </div>
+    <div class="video-call-footer">
+      <button class="end-call-btn">End Call</button>
+    </div>
+  </div>
+</div>
+{% endblock content %}
